@@ -8,8 +8,8 @@
         var pincel = tela.getContext('2d');
 
         pincel.fillStyle = cor;
-        pincel.fillRect(x, y, 50, 50);
-        pincel.fillStroke = 'black';
+        pincel.fillRect(x, y, 50, 50); //fillRect criar quadrado/retangulo 
+        pincel.fillStroke = 'black'; // fillStroke inserir borda
         pincel.fillRect(x, y, 50, 50);
 
     }
@@ -26,6 +26,8 @@
 
     for (var x = 0; x < 600; x = x + 50){
         desenhaQuadrado(x, 0, 'green');
+        desenhaQuadrado(x, 50, 'yellow');
+        desenhaQuadrado(x, 100, 'blue');
 
     }
 
